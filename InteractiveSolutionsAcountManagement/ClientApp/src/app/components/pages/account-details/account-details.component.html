@@ -1,0 +1,16 @@
+<div class="nav-add-transaction-container">
+
+  <div class="flow-nav-container">
+
+    <a>Persons</a>/<a>Accounts</a>/<a>Transactions</a>
+
+  </div>
+
+  <div class="add-transaction-btn-container">
+
+    <a routerLink = "/add-transaction/{{account_code}}"><button class="add-transaction-btn">Add Transaction +</button></a>
+
+  </div>
+
+</div>
+<app-transaction *ngFor = "let transaction of transactions" [transaction] = "transaction"></app-transaction>

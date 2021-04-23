@@ -1,0 +1,13 @@
+<div class="page-nav">
+
+    <div class="page-nav-container">
+      <a>Persons</a>/<a>Accounts</a>
+    </div>
+
+    <div class="add-account-button-container">
+      <a routerLink = "/add-account/{{person_code}}"><button class="add-account-btn">Add Account +</button></a>
+    </div>
+
+</div>
+
+<app-account *ngFor = "let account of accounts" [account] = "account"></app-account>

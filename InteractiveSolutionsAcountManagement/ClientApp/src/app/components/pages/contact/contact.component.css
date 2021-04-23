@@ -1,0 +1,56 @@
+div.contact-container {
+  width: 100%;
+  height: 80vh;
+ 
+}
+
+
+div.contact-details {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+h3.contact-header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #ed1c23;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+h4.contact-sec-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #4c4c4c;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h4.contact-ter-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #4c4c4c;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+
+div.divider {
+    width: 60%;
+    height: 1px;
+    background-color: red;
+}
+
+
+h4.contact-farewell {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #868686;
+  font-size: 2rem;
+  margin-top: 1rem;
+}

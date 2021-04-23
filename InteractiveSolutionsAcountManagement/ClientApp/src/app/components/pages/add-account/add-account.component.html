@@ -1,0 +1,18 @@
+<h4>Add Account</h4>
+<form [formGroup]="addAccountForm" (ngSubmit)="onAddAccount()">
+
+  <div class="form-group">
+    <input type="hidden" class="form-control" name="accountNumber" placeholder="Account Number" formControlName="personCode" />
+  </div>
+  <div class="form-group">
+    <label>Account Number</label>
+    <input type="text" class="form-control" name="accountNumber" placeholder="Account Number" formControlName="accountNumber" />
+  </div>
+  <div class="form-group">
+    <label>Outstanding Balance</label>
+    <input type="number" class="form-control" name="accountNumber" formControlName="outstandingBalance" readonly />
+  </div>
+
+  <button type="submit" [disabled]="!addAccountForm.valid" class="btn btn-primary">Add Account</button>
+
+</form>

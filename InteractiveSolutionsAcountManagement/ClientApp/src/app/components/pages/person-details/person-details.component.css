@@ -1,0 +1,28 @@
+div.page-nav {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+div.page-nav-container{
+
+    width: 50%;
+    height: 100%;
+    background-color: lightgray;
+
+}
+
+div.add-account-button-container {
+  width: 50%;
+  height: 100%;
+}
+
+button.add-account-btn {
+  float: right;
+  border: none;
+  background-color: #ED1C23;
+  color: white;
+  height: 100%;
+}

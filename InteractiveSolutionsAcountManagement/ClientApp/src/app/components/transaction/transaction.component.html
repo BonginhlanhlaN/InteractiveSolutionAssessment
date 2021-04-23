@@ -1,0 +1,31 @@
+<div class="transations-container">
+
+  <div class="transaction-details-container">
+
+    <div class="transaction-details-inner-container">
+
+      <div class="tran-date-container">
+        <p class="trans-attr-name">Transaction Date </p><p class="trans-actual-name trans-date"> {{transaction.transactionDate}}</p>
+      </div>
+      <div class="capture-date-container">
+        <p class="trans-attr-name">Capture Date </p><p class="trans-actual-name capture-date"> {{transaction.captureDate}}</p>
+      </div>
+      <div class="trans-amount-container">
+        <p class="trans-attr-name">Amount</p><p class="trans-actual-name trans-amount">R{{transaction.amount}}</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="transaction-button-container">
+
+    <div class="transaction-button-inner-container">
+
+      <a routerLink = "/transaction-details/{{ transaction.code }}"><button>View/Edit</button></a>
+
+    </div>
+
+  </div>
+
+</div>

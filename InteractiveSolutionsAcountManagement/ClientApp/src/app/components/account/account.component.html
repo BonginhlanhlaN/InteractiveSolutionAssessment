@@ -1,0 +1,34 @@
+<a routerLink="{{'/account-details/' + account.code }}">
+
+  <div class="account-container">
+
+    <div class="account-details-container">
+
+      <div class="account-number-balance-container">
+
+        <div class="account-number-container">
+          <p class="acc-no">Acc No. </p><p class="account-number">  {{account.accountNumber}} </p>
+        </div>
+        <div class="account-balance-container">
+          <p class="acc-balance">Balance </p><p class="account-balance">  R{{account.outstandingBalance}} </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="account-buttons-container">
+
+      <div class="account-buttons-inner-container">
+
+        <a routerLink="/edit-account/{{account.code}}"><button>Edit</button></a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+</a>
+

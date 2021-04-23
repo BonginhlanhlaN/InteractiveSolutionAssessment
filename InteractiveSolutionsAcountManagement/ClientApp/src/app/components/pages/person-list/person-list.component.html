@@ -1,0 +1,7 @@
+<div class="add-person-container">
+  <button class="add-person-button">
+    <a routerLink="/add-person">Add Person +</a>
+  </button>
+</div>
+
+<app-person *ngFor = "let person of personsList" [person] = "person" (deletePerson) = "deletePerson($event)" ></app-person>

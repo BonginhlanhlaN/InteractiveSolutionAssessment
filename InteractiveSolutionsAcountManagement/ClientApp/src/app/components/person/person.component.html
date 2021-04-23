@@ -1,0 +1,36 @@
+<a  routerLink="{{'/person-details/' + person.code }}" class="person-view-link">
+  <div class="person-container">
+
+    <div class="person-details-container">
+
+      <div class="name-surname-idnubmer-conatiner">
+        <div class="name-surname-container">
+
+          {{ person.name }}  {{ person.surname }}
+
+        </div>
+        <div class="idnubmer-container">
+
+          {{ person.idNumber }}
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="button-details">
+
+      <div class="button-container">
+
+        <button class="person-edit-button"><a routerLink="{{'/edit-person/' + person.code}}">Edit</a></button>
+        <button class="person-delete-button" (click)="onPersonDelete(person)">Delete</button>
+
+      </div>
+
+    </div>
+
+
+  </div>
+</a>
+
+

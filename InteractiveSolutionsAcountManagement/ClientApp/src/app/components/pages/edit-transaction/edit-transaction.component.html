@@ -1,0 +1,26 @@
+<h4>Edit Transaction</h4>
+<form [formGroup]="editTransactionForm" (ngSubmit)="onEditTransaction()">
+
+  <div class="form-group">
+    <input type="hidden" class="form-control" name="code" formControlName="code" />
+  </div>
+  <div class="form-group">
+    <label>Account Code</label>
+    <input type="text" class="form-control" name="name" placeholder="Account Code" formControlName="accountCode" />
+  </div>
+  <div class="form-group">
+    <label>T Date</label>
+    <input type="text" class="form-control" name="surname" placeholder="Trans date" formControlName="transactionDate" />
+  </div>
+  <div class="form-group">
+    <label>C Date</label>
+    <input type="text" class="form-control" name="idNumber" placeholder="Capture Date" formControlName="capturedDate" readonly />
+  </div>
+  <div class="form-group">
+    <label>Amount</label>
+    <input type="text" class="form-control" name="idNumber" placeholder="Amount" formControlName="amount" readonly />
+  </div>
+
+  <button type="submit" [disabled]="!editTransactionForm.valid" class="btn btn-primary">Update</button>
+
+</form>

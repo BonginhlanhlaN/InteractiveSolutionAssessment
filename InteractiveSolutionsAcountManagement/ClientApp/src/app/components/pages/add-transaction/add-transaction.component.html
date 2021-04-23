@@ -1,0 +1,22 @@
+<form [formGroup]="addTransactionForm" (ngSubmit)="onFormSubmit()">
+
+  <div class="form-group">
+    <label>Transaction Date</label>
+    <input type="text" class="form-control" name="transactionDate" formControlName="transactionDate" readonly />
+  </div>
+  <div class="form-group">
+    <label>Capture Date</label>
+    <input type="text" class="form-control" name="captureDate" formControlName="captureDate" readonly />
+  </div>
+  <div class="form-group">
+    <label>Amount</label>
+    <input type="number" class="form-control" name="amount" placeholder="Enter Amount" formControlName="amount" />
+  </div>
+  <div class="form-group">
+    <label>Description</label>
+    <input type="text" class="form-control" name="amount" placeholder="Enter Amount" formControlName="description" />
+  </div>
+
+  <button type="submit" [disabled]="!addTransactionForm.valid" class="btn btn-primary">Add Transaction</button>
+
+</form>

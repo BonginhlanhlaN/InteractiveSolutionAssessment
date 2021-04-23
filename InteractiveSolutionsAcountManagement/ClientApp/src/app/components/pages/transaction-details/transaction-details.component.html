@@ -1,0 +1,19 @@
+<form [formGroup]="editTransactionForm" (ngSubmit)="onEditTransaction()">
+
+  
+  <div class="form-group">
+    <label>Transaction Date</label>
+    <input type="date" class="form-control" name="surname" placeholder="Trans date" formControlName="transactionDate" />
+  </div>
+  <div class="form-group">
+    <label>Capture Date</label>
+    <input type="text" class="form-control" name="idNumber" placeholder="Capture Date" formControlName="captureDate" readonly />
+  </div>
+  <div class="form-group">
+    <label>Amount</label>
+    <input type="text" class="form-control" name="idNumber" placeholder="Amount" formControlName="amount" readonly />
+  </div>
+
+  <button type="submit" [disabled]="!editTransactionForm.valid" class="btn btn-primary">Update</button>
+
+</form>

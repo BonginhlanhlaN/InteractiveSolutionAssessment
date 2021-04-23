@@ -1,0 +1,17 @@
+<h4>Edit Account</h4>
+<form [formGroup]="editAccountForm">
+
+  <div class="form-group">
+    <label>Account Number</label>
+    <input type="text" class="form-control" name="accountNumber" placeholder="Account Number" formControlName="accountNumber" readonly/>
+  </div>
+  <div class="form-group">
+    <label>Outstanding Balance</label>
+    <input type="text" class="form-control" name="accountNumber" placeholder="Account Number" formControlName="outstandingBalance" readonly/>
+  </div>
+
+  <button type="submit" [disabled]="!editAccountForm.valid" class="btn btn-primary">Update</button>
+
+</form>
+
+
